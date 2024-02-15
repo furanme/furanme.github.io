@@ -1,8 +1,31 @@
 video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+.container iframe {
+  width: 350px;
+  height: 500px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.container iframe:hover {
+  box-shadow: 0 0 10px rgba(224, 132, 132, 0.5);
+} 
+
